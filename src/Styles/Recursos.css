@@ -1,0 +1,52 @@
+.Recursos {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.Texto-lancamento {
+  text-align: start;
+  margin-bottom: 1rem;
+}
+
+.Blocos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bloquinho {
+  flex-basis: calc(33.33% - 10px);
+  margin: 0.3rem; /* Aumentei a margem */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 22.5rem;
+}
+
+.Blocos img {
+  margin-left: 0; /* Removi a margem esquerda */
+  max-width: 70%;
+  height: auto;
+  margin-bottom: 0.5rem; /* Aumentei o espaçamento entre imagem e texto */
+}
+
+.Blocos-text {
+  font-size: 1.2rem;
+  background: #9595958a;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 100%;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .Blocos {
+    justify-content: center;
+  }
+
+  .bloquinho {
+    flex-basis: calc(50% - 10px);
+    margin: 0.3rem; /* Ajustei a margem para telas menores */
+  }
+}
